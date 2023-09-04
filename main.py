@@ -4,7 +4,7 @@ import tkinter as tk
 def to_km():
     try:
         miles = float(miles_entry.get())
-        km = round(miles * 1.60934)
+        km = round(miles * 1.60934, 2)
     except ValueError:
         print("insert a number!")
         return
