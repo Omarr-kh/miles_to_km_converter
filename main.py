@@ -14,4 +14,9 @@ km = tk.Entry()
 km.grid(column=5, row=3)
 km.config(width=10)
 
+# Labels
+tk.Label(text="Miles").grid(column=6, row=2)
+tk.Label(text="is equal to").grid(column=4, row=3)
+tk.Label(text="Km").grid(column=6, row=3)
+
 window.mainloop()
