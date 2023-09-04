@@ -2,8 +2,12 @@ import tkinter as tk
 
 # Button Command
 def to_km():
-    miles = int(miles_entry.get())
-    km = miles * 1.60934
+    try:
+        miles = int(miles_entry.get())
+        km = round(miles * 1.60934)
+    except ValueError:
+        print("insert a number!")
+        return
     km_entry.config(state="normal")
     km_entry.insert(0, km)
     km_entry.config(state="readonly")
